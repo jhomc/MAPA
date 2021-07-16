@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mapa Frontend</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>Loja Fictícia S.A.</header>
+
+    
+    <section class="passShowContainer">
+        <div id="passShow"></div>
+        <div id="ticketWidow"></div>
+    </section>
+
+
+    <div class="passContainer">
+        <div class="passGenerator">
+            <h1>Para clientes:</h1>
+            <p>Escolha seu tipo de atendimento:</p>
+            <div class="buttonContainer">
+                <button onclick="createC()">Comum</button>
+                <button onclick="createR()">Rapido</button>
+                <button onclick="createP()">Prioritário</button>
+            </div>
+            <div class="passId">Sua senha é:<span></span></div>
+        </div>
+
+        <div class="passGenerator" id="last">
+            <h1>Para caixas:</h1>
+            <p>Clique em um caixa para chamar uma senha:</p>
+            <div class="buttonContainer">
+                <button onclick="callOne()">Caixa 1</button>
+                <button onclick="callTwo()">Caixa 2</button>
+                <button onclick="callThree()">Caixa 3</button>
+                <button onclick="callFour()">Caixa 4</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/scripts.js"></script>
+
+</body>
